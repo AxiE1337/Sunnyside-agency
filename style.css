@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
-    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -38,6 +37,36 @@
 .hamburger{
     display: none;
     cursor: pointer;
+}
+
+.menu {
+    background-image: url(images/menu.png);
+    background-size: cover;
+    height: 50vh;
+    width: 55vh;
+    font-size: 4.5vh;
+    z-index: 200;
+    display: none;
+}
+.menu a {
+    text-decoration: none;
+    color: rgb(65, 65, 65);
+}
+.menu .menu-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 20%;
+}
+.menu .btn-contact {
+    font-weight: 700;
+    background-color: rgb(255, 230, 0);
+    color: black;
+    font-size: 3.5vh;
+    padding: 15px 30px;
+    border-radius: 30px;
 }
 
 .arrow {
@@ -267,6 +296,10 @@
     }
     .hamburger {
         display: inline;
+    }
+    .menu.open {
+        height: 50vh;
+        display:inline-block;
     }
     .header .head-container {
         margin-top: 100px;
