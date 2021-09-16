@@ -71,6 +71,11 @@
 
 .arrow {
     cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.arrow:hover {
+    margin-top: 2%;
 }
 
 .navbar {
@@ -94,6 +99,12 @@
     color: black;
     padding: 15px 30px;
     border-radius: 30px;
+    transition: 0.5 ease;
+}
+
+.navbar .btn-contact:hover {
+    color: white;
+    background-color: rgb(0, 220, 228);
 }
 
 .main-container {
@@ -105,7 +116,19 @@
 }
 
 .main-container a {
+    font-weight: 900;
     text-decoration: none;
+    color: black;
+    display: inline-block;
+    transition: 0.3s ease-in-out;
+}
+
+.content-1 a:hover {
+    box-shadow: rgba(238, 255, 0, 0.4) 0px 5px, rgba(233, 250, 0, 0.3) 0px 10px, rgba(223, 190, 7, 0.2) 0px 15px, rgba(246, 250, 0, 0.1) 0px 20px, rgba(251, 255, 0, 0.05) 0px 25px;
+}
+
+.content-4 a:hover {
+    box-shadow: rgba(250, 3, 3, 0.4) 0px 5px, rgba(255, 2, 36, 0.3) 0px 10px, rgba(240, 46, 111, 0.2) 0px 15px, rgba(240, 46, 72, 0.1) 0px 20px, rgba(240, 46, 95, 0.05) 0px 25px;
 }
 
 .main-container .content-1 {
@@ -113,6 +136,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items:flex-start;
     padding: 20%;
     gap: 50px;
     width: 100%;
@@ -300,6 +324,9 @@
     .menu.open {
         height: 50vh;
         display:inline-block;
+    }
+    .header {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(images/mobile/image-header.jpg);
     }
     .header .head-container {
         margin-top: 100px;
