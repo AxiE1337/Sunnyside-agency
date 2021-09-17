@@ -40,14 +40,17 @@
 }
 
 .menu {
-    background-image: url(images/menu.png);
-    background-size: cover;
-    height: 50vh;
-    width: 55vh;
+    background-color: whitesmoke;
+    position: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 350px;
     font-size: 4.5vh;
     z-index: 200;
     display: none;
 }
+
 .menu a {
     text-decoration: none;
     color: rgb(65, 65, 65);
@@ -58,8 +61,21 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-    padding-top: 20%;
+    padding-top: 15%;
 }
+
+.menu::before {
+    content: "";
+    display: block;
+    margin-top: -50px;
+    margin-left: 300px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 50px 50px;
+    border-color: transparent transparent whitesmoke transparent;
+}
+
 .menu .btn-contact {
     font-weight: 700;
     background-color: rgb(255, 230, 0);
@@ -75,7 +91,7 @@
 }
 
 .arrow:hover {
-    margin-top: 2%;
+    margin-top: 1.5%;
 }
 
 .navbar {
@@ -85,6 +101,7 @@
     height: 100px;
     width: 100%;
     padding: 60px;
+    transition: 0.4s;
 }
 
 .navbar a {
@@ -323,7 +340,7 @@
     }
     .menu.open {
         height: 50vh;
-        display:inline-block;
+        display: block;
     }
     .header {
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(images/mobile/image-header.jpg);
